@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-webpack",
+  "version": "1.0.0",
+  "description": "AngularJS-Webpack starter",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run build:prod",
+    "start": "yarn run watch:dev",
+    "watch:dev": "webpack --config config/webpack.dev.js --progress --profile --watch --content-base angular/",
+    "build:prod": "webpack --config config/webpack.prod.js"
+  },
+  "devDependencies": {
+    "angular": "1.5.11",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-merge": "^4.2.1"
+  }
+}
